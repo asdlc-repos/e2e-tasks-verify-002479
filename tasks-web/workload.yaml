@@ -1,0 +1,13 @@
+apiVersion: openchoreo.dev/v1alpha1
+metadata:
+  name: tasks-web
+spec:
+  autoBuild: true
+  autoDeploy: true
+  endpoints:
+    - name: http
+      port: 80
+      type: HTTP
+      basePath: /
+      visibility:
+        - external
